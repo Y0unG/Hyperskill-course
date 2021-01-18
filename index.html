@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav>
+        <button class="hamburger"><img src=""></button>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+    <h1>Dima Rudniev, Front-End developer</h1>
+</header>
+<div class="window">
+    <h2>My Project</h2>
+    <a href="#">Full project</a>
+    <p> Lorem5</p>
+    <button onclick="close()">Close</button>
+</div>
+<section id="about">
+    <h2>About Me</h2>
+    <img src="./img/photo_2020-04-06_11-49-06.jpg">
+    <p>Lorem5   </p>
+</section>
+<section id="portfolio">
+    <h2>Portfolio</h2>
+    <img src="img/portfolio.jpg" class="portfolio__img">
+    <p>The newest sites</p>
+    <button class="open-window" onclick="show()">Look more</button>
+</section>
+<section id="contacts">
+    <a href="tel:88005553535">88005553535</a>
+</section>
+
+<footer>Made by Dima Rudniev, 2020</footer>
+
+
+<script type="javascript">
+    let popup = document.querySelector(".window");
+    let show = function() {
+        popup.style.display('block');
+    }
+    let close = function() {
+        popup.style.display("none");
+    }
+</script>
+</body>
+</html>
